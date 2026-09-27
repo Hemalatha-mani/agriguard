@@ -1,0 +1,24 @@
+# --- Python / backend ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+backend/.env
+backend/*.db
+backend/ml_models/*.keras
+backend/ml_models/*.h5
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.env
+.vite/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+*.log

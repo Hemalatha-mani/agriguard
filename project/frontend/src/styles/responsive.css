@@ -1,0 +1,42 @@
+/* Tablet */
+@media (max-width: 1024px) {
+  .stats-grid, .quick-links-grid, .diseases-grid, .prevention-grid, .crop-management-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ai-detect-grid { grid-template-columns: 1fr; }
+  .remedies-layout { grid-template-columns: 1fr; }
+  .home-hero { flex-direction: column; }
+  .home-hero__image { width: 100%; height: 220px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+    z-index: 100;
+  }
+  .sidebar--open { transform: translateX(0); }
+  .sidebar__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+  }
+  .app-shell__topbar { display: flex; }
+  .page { padding: 16px; }
+  .stats-grid, .quick-links-grid, .diseases-grid, .prevention-grid, .crop-management-grid {
+    grid-template-columns: 1fr;
+  }
+  .auth-page__image { display: none; }
+  .chat-bubble { max-width: 90%; }
+}
+
+@media (max-width: 480px) {
+  .home-hero__text h1 { font-size: 1.4rem; }
+  .btn { width: 100%; }
+  .prediction-result__actions { flex-direction: column; }
+}
